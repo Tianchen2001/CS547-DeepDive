@@ -12,7 +12,7 @@ The final dataset includes:
    - Unit: Thousand Barrels per Day.
    - Highlights supply-side factors influencing prices.
 
-2. **Date/Time**:
+2. **Date & Time**:
    - Accounts for temporal patterns and specific events impacting price dynamics.
 
 Historical gasoline prices were explored during the initial analysis but were not included as direct features in the final modeling due to a focus on external and temporal influences.
@@ -36,8 +36,9 @@ The final deep learning model was optimized through extensive hyperparameter tun
 - Epochs: 500.
 
 ### Performance Evaluation
-- The final model achieved a **Mean Absolute Error (MAE)** of approximately $1.02 during the test phase.
+- The final model achieved a **Mean Absolute Error (MAE)** of approximately $0.155 during the test phase.
 - Training, validation, and test losses were monitored across epochs, confirming stability and generalization.
+![Training, Validation, and Test Loss](loss.png)
 
 ---
 
@@ -45,11 +46,12 @@ The final deep learning model was optimized through extensive hyperparameter tun
 The permutation importance analysis revealed the following:
 
 1. **Date**:
-   - **Importance Score**: 1.0414.
-   - The most influential feature, showcasing strong temporal dependency in gasoline prices. Disrupting this feature increased prediction error by approximately $1.02/gallon.
+   - **Importance Score**: 1.0246.
+   - The most influential feature, showcasing strong temporal dependency in gasoline prices.
    - Suggests consistent patterns linked to economic cycles, seasonal demand, and significant events.
 
 2. **Net Imports**:
+   - **Importance Score**: 0.2323.
    - Significant impact on predictions, emphasizing how variations in supply metrics directly affect pricing.
 
 ---
@@ -58,7 +60,7 @@ The permutation importance analysis revealed the following:
 
 ### Results
 1. **Model Accuracy**:
-   - The deep learning model demonstrated strong performance with a Mean Absolute Error (MAE) of $1.02 on test data, validating its ability to predict gasoline prices within a close range.
+   - The deep learning model demonstrated strong performance with a Mean Absolute Error (MAE) of $0.155 on test data, validating its ability to predict gasoline prices within a close range.
    - The model effectively captured the temporal dependencies and supply-side influences, showcasing stable performance across validation and test phases.
 
 2. **Feature Importance Validation**:
