@@ -4,8 +4,8 @@
 
 - Tianchen Wang (tw17)
 - Wei Xia (weixia3)
-- SHIH-YU Huang (not sure if he is collaborating with us)
-- Tang-Shuo Kao (not sure if he is collaborating with us)
+- SHIH-YU Huang (shihyuh2)
+- Tang-Shuo Kao (tk33)
 
 ## Problem Description
 
